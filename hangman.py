@@ -150,9 +150,6 @@ def get_valid_word(words):
 #         return err
 
 
-# hang()
-# # game = hang()
-
 # '''This function is responsible for the assignment and display
 # of the result, i.e words that are correctly guessed by the user
 # and those that he have used so far'''
@@ -194,8 +191,3 @@ def hangman():
 
 
 hangman()
-# print(get_valid_word(another_word))
-# global game
-
-
-# game = hang()
