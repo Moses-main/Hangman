@@ -6,5 +6,5 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum magni laudantium
 # words = ['glory', 'wonderful', 'age', 'father', 'mother',
 #          'children', 'football', 'tennis', 'microwave']
 
-another_word = ["awesome", "grace", "church", "basic", "primary", "university", "National", "Beautiful", "ugliness", "handsome",
+another_word = ["awesome", "grace", "church", "basic", "primary", "university", "national", "Beautiful", "ugliness", "handsome",
                 "morning", "rose", "bouncing", "grateful", "appreciate", "loneliness", "music", "tutorial", "dictionary", "computer", "technology", "information"]
