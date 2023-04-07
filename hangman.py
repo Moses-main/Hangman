@@ -155,6 +155,20 @@ def get_valid_word(words):
 # and those that he have used so far'''
 
 
+# win = tk.Tk()
+# win.title('Hangman Game')
+# win.geometry('1200x500')
+# win.config(bg='teal')
+
+
+# entry = tk.Entry()
+# entry.config(background='white', foreground='teal', width=50)
+# entry.pack()
+
+
+# win.mainloop()
+
+
 # '''FUNCTION SECTION
 # Activate here if you're done with
 # the class region.
@@ -187,7 +201,7 @@ def hangman():
             print('You have already used that character. Please try again')
         else:
             print('Invalid character. Please try again')
-    print('Congrats')
+    print('Congrats {} is the word'.format("".join(words)))
 
 
 hangman()
