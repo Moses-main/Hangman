@@ -2,6 +2,7 @@ import random
 import tkinter as tk
 from words import another_word
 import string
+from GUI import GameControl
 
 
 # global usr_text
