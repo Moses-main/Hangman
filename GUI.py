@@ -1,11 +1,22 @@
-from tkinter import Tk
+import tkinter as tk
 
 
 class GameControl:
-    window = Tk()
-    window.geometry("400x600")
-    Tk.title = "Hang-Man-Game"
-    window.config(bg='teal', )
+    root = tk.Tk()
+    root.geometry('600x500')
+    root.config(bg='teal')
+    root.title('Hangman Game')
+
+    game_name = tk.Label(text="Hang Man Game")
+    game_name.config(font="arial 44", bg="teal", fg='white')
+    game_name.pack(pady=50)
+
+    input_label = tk.Label(text="Enter Alphabet Below")
+    input_label.pack(pady=30)
+
+    User_input = tk.Entry()
+    User_input.config(font='timesnewroman')
+    User_input.pack(padx=5, pady=10)
 
     def next(sef):
         pass
@@ -19,8 +30,12 @@ class GameControl:
     def quit(self):
         pass
 
-    # window.mainloop()
+    tk.mainloop()
 
+
+if __name__ == "__main__":
+    # GameControl()
+    print('This is the game')
 
 '''
 Tkinter Widgets
