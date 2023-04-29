@@ -19,11 +19,17 @@ class GameControl:
     User_input.config(font='timesnewroman')
     User_input.pack(padx=5, pady=10)
 
+    next_button = tk.Button(command=next)
+    next_button.pack(pady=20)
+
+    start_button = tk.Button(command=start_game)
+    start_button.pack(pady=15)
+
     def next(sef):
-        pass
+        print('You just tapped the next_button')
 
     def start_game(self):
-        pass
+        print("The game just started")
 
     def pause(self):
         pass
