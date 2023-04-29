@@ -12,6 +12,7 @@ class GameControl:
     game_name.pack(pady=50)
 
     input_label = tk.Label(text="Enter Alphabet Below")
+    input_label.config(bg='teal', fg='white', font='bold 15')
     input_label.pack(pady=30)
 
     User_input = tk.Entry()
