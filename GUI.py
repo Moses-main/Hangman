@@ -29,7 +29,8 @@ class GameControl:
         print('You just tapped the next_button')
 
     def start_game(self):
-        print("The game just started")
+        pass
+        # print("The game just started")
 
     def pause(self):
         pass
