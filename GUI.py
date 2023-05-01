@@ -1,50 +1,80 @@
 import tkinter as tk
 
 
-class GameControl:
-    root = tk.Tk()
-    root.geometry('600x500')
-    root.config(bg='teal')
-    root.title('Hangman Game')
+# class GameControl:
 
-    game_name = tk.Label(text="Hang Man Game")
-    game_name.config(font="arial 44", bg="teal", fg='white')
-    game_name.pack(pady=50)
+def start_game():
+    # root = tk.Tk()
+    root.destroy()
+    new_window = tk.Tk()
 
-    input_label = tk.Label(text="Enter Alphabet Below")
-    input_label.config(bg='teal', fg='white', font='bold 15')
-    input_label.pack(pady=30)
+    new_window.geometry('600x500')
+    new_window.config(bg='teal')
+    new_window.title('Hangman Game')
 
-    User_input = tk.Entry()
-    User_input.config(font='timesnewroman')
-    User_input.pack(padx=5, pady=10)
+    def counter():
+        from time import sleep
+        for a in range(4):
+            return a
+    new_label = tk.Label(text=counter)
+    new_label.pack()
 
-    next_button = tk.Button(text="Pause", width=10)
-    next_button.pack(pady=20)
+# new_label = tk.Label(text='Glorious')
+# new_label.pack()
 
-    quit_button = tk.Button(text="Quit", width=10)
-    quit_button.pack(pady=20)
-
-    start_button = tk.Button(text='Start Game', width=10)
-    start_button.pack(pady=15)
-
-    def next(sef):
-        print('You just tapped the next_button')
-
-    def start_game(self):
-        pass
-
-    def pause(self):
-        pass
-
-    def quit(self):
-        pass
-
-    tk.mainloop()
+# from time import sleep
+# On_label = tk.Label(text=f"This is wonderful")
+# for a in range(10, -1):
+#     print(a)
+#     # game_on = tk.Label(text=f'{a}\n\nGame one 15', font='Arial')
+#     sleep(1)
+# game_on.pack(padx=15, pady=15)
 
 
-if __name__ == "__main__":
-    print('This is the game')
+root = tk.Tk()
+root.geometry('600x500')
+root.config(bg='teal')
+root.title('Hangman Game')
+
+game_name = tk.Label(text="Hang Man Game")
+game_name.config(font="arial 44", bg="teal", fg='white')
+game_name.pack(pady=50)
+
+input_label = tk.Label(text="Enter Alphabet Below")
+input_label.config(bg='teal', fg='white', font='bold 15')
+input_label.pack(pady=30)
+
+User_input = tk.Entry()
+User_input.config(font='timesnewroman', width=35)
+User_input.pack(padx=5, pady=10)
+
+next_button = tk.Button(text="Pause", width=10)
+next_button.place(x=400, y=340)
+
+quit_button = tk.Button(text="Quit", width=10)
+quit_button.place(x=140, y=340)
+
+start_button = tk.Button(text='Start Game', width=10, command=start_game)
+start_button.place(x=260, y=340)
+
+
+def next():
+    print('You just tapped the next_button')
+
+
+def pause():
+    pass
+
+
+def quit():
+    pass
+
+
+tk.mainloop()
+
+
+# if __name__ == "__main__":
+#     print('This is the game')
 
 '''
 Tkinter Widgets
