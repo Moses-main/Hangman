@@ -30,7 +30,6 @@ class GameControl:
 
     def start_game(self):
         pass
-        # print("The game just started")
 
     def pause(self):
         pass
@@ -42,7 +41,6 @@ class GameControl:
 
 
 if __name__ == "__main__":
-    # GameControl()
     print('This is the game')
 
 '''
