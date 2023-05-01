@@ -12,24 +12,6 @@ def start_game():
     new_window.config(bg='teal')
     new_window.title('Hangman Game')
 
-    def counter():
-        from time import sleep
-        for a in range(4):
-            return a
-    new_label = tk.Label(text=counter)
-    new_label.pack()
-
-# new_label = tk.Label(text='Glorious')
-# new_label.pack()
-
-# from time import sleep
-# On_label = tk.Label(text=f"This is wonderful")
-# for a in range(10, -1):
-#     print(a)
-#     # game_on = tk.Label(text=f'{a}\n\nGame one 15', font='Arial')
-#     sleep(1)
-# game_on.pack(padx=15, pady=15)
-
 
 root = tk.Tk()
 root.geometry('600x500')
