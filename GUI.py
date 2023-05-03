@@ -13,6 +13,18 @@ def start_game():
     new_window.title('Hangman Game')
 
 
+def next():
+    print('You just tapped the next_button')
+
+
+def pause():
+    pass
+
+
+def quit():
+    pass
+
+
 root = tk.Tk()
 root.geometry('600x500')
 root.config(bg='teal')
@@ -27,29 +39,17 @@ input_label.config(bg='teal', fg='white', font='bold 15')
 input_label.pack(pady=30)
 
 User_input = tk.Entry()
-User_input.config(font='timesnewroman', width=35)
+User_input.config(font='timesnewroman', width=35,)
 User_input.pack(padx=5, pady=10)
 
-next_button = tk.Button(text="Pause", width=10)
-next_button.place(x=400, y=340)
+# next_button = tk.Button(text="Pause", width=10)
+# next_button.place(x=400, y=340)
 
 quit_button = tk.Button(text="Quit", width=10)
 quit_button.place(x=140, y=340)
 
 start_button = tk.Button(text='Start Game', width=10, command=start_game)
 start_button.place(x=260, y=340)
-
-
-def next():
-    print('You just tapped the next_button')
-
-
-def pause():
-    pass
-
-
-def quit():
-    pass
 
 
 tk.mainloop()
