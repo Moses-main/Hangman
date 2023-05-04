@@ -1,28 +1,38 @@
 import tkinter as tk
+import hangman
 
 
 # class GameControl:
 
 def start_game():
-    # root = tk.Tk()
-    root.destroy()
-    new_window = tk.Tk()
 
+    player_name = User_name.get()
+    if player_name == "" or player_name == None:
+        player_name = 'player'
+
+    root.destroy()
+
+    new_window = tk.Tk()
     new_window.geometry('600x500')
     new_window.config(bg='teal')
     new_window.title('Hangman Game')
 
+    game_label = tk.Label(
+        text=f"Welcome {player_name} to the Game Section ", font='Arial 25')
+    game_label.config(padx=10, pady=15, bg='teal', fg='white')
+    game_label.pack()
 
-def next():
-    print('You just tapped the next_button')
+    game_desc = tk.Label(
+        text="To play game, enter an alphabet inside the box below to guess ", font='10', bg='teal', fg='white')
+    game_desc.pack(pady=200)
 
 
-def pause():
-    pass
+def pause_button():
+    print('You just tapped the pause_button')
 
 
-def quit():
-    pass
+def quit_button():
+    root.destroy()
 
 
 root = tk.Tk()
@@ -34,18 +44,18 @@ game_name = tk.Label(text="Hang Man Game")
 game_name.config(font="arial 44", bg="teal", fg='white')
 game_name.pack(pady=50)
 
-input_label = tk.Label(text="Enter Alphabet Below")
+input_label = tk.Label(text="Enter Your Name Below")
 input_label.config(bg='teal', fg='white', font='bold 15')
 input_label.pack(pady=30)
 
-User_input = tk.Entry()
-User_input.config(font='timesnewroman', width=35,)
-User_input.pack(padx=5, pady=10)
+User_name = tk.Entry()
+User_name.config(font='timesnewroman', width=35,)
+User_name.pack(padx=5, pady=10)
 
-# next_button = tk.Button(text="Pause", width=10)
-# next_button.place(x=400, y=340)
+next_button = tk.Button(text="Pause", width=10, command=pause_button)
+next_button.place(x=400, y=340)
 
-quit_button = tk.Button(text="Quit", width=10)
+quit_button = tk.Button(text="Quit", width=10, command=quit_button)
 quit_button.place(x=140, y=340)
 
 start_button = tk.Button(text='Start Game', width=10, command=start_game)

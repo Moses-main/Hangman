@@ -2,7 +2,6 @@ import random
 import tkinter as tk
 from words import another_word
 import string
-from GUI import GameControl
 
 
 # global usr_text
@@ -202,7 +201,7 @@ def hangman():
             print('You have already used that character. Please try again')
         else:
             print('Invalid character. Please try again')
-    print('Congrats {} is the word'.format("".join(words)))
+    print('Congrats is the word'.format("".join(words)))
 
 
 hangman()
